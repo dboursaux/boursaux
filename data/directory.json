@@ -1,0 +1,34 @@
+{
+  "members": [
+    {
+      "id": "damien",
+      "name": "Damien Boursaux",
+      "avatar": "/images/damien_300.webp",
+      "bio": "Bidouille serveur, love",
+      "status": "online",
+      "color": "#8e7cc3",
+      "tags": ["tech", "photo"],
+      "links": [
+        { "label": "Site", "url": "https://damien.boursaux.fr", "icon": "globe" },
+        { "label": "Blog", "url": "https://blog.damien.boursaux.fr", "icon": "pen" },
+        { "label": "Projets", "url": "https://lab.damien.boursaux.fr", "icon": "code" }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "name": "Cloud",
+      "description": "Stockage et partage",
+      "status": "online",
+      "private": false,
+      "url": "#"
+    },
+    {
+      "name": "Médiathèque",
+      "description": "Vidéos et musique",
+      "status": "offline",
+      "private": true,
+      "url": "#"
+    }
+  ]
+}

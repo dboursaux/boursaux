@@ -1,0 +1,20 @@
+name: Validate directory.json
+
+on:
+  push:
+    paths: [ 'data/directory.json', 'data/directory.schema.json' ]
+  pull_request:
+    paths: [ 'data/directory.json', 'data/directory.schema.json' ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install AJV CLI
+        run: npm i -g ajv-cli@5
+
+      - name: Validate directory.json
+        run: |
+          ajv validate -d data/directory.json -s data/directory.schema.json --strict=false
